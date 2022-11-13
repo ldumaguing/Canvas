@@ -1,6 +1,0 @@
-Map:
-   UK43-MAP-2015.jpg
-   5475 x 5100 pixels
-   X: 10 to 60
-   Y: 01 to 41
-   Hex: 1028

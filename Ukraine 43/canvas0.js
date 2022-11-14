@@ -14,5 +14,5 @@ function foo() {
     img = document.getElementById("img300");
     ctx.drawImage(img,10,10);
     img = document.getElementById("img400");
-    ctx.drawImage(img,50,50);
+    ctx.drawImage(img,90,50);
 }

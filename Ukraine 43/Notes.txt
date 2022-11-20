@@ -1,3 +1,10 @@
+create table chits (
+   id int primary key,
+   name varchar(80)
+);
+
+
+
 Map:
    UK43-MAP-2015.jpg
    5475 x 5100 pixels

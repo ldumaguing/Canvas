@@ -12,7 +12,7 @@ function foo() {
     let img;
 
     img = document.getElementById("img300");
-    ctx.drawImage(img,10,10);
+    ctx.drawImage(img,95,11);
     img = document.getElementById("img400");
-    ctx.drawImage(img,90,50);
+    ctx.drawImage(img,1776,1062);
 }

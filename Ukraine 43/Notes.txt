@@ -1,7 +1,35 @@
+select 
+*
+from
+ ChitStatus a,
+ chits b
+where
+ a.rem = b.id;
+
+
+create table ChitStatus (
+   id int primary key,
+   name varchar(80),
+   front int,
+   back int default null,
+   rem int
+
+);
+
+
+
+
+
+
+
 create table chits (
    id int primary key,
    name varchar(80)
 );
+
+
+
+
 
 
 

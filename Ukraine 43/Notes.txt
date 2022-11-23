@@ -1,3 +1,28 @@
+
+update ChitStatus A
+inner join chits B on A.aaa = B.id
+set A.front = B.name;
+
+
+
+update ChitStatus A
+inner join chits B
+on
+A.bbb = B.id
+set A.back = B.name;
+
+
+
+update ChitStatus A
+inner join chits B
+on
+A.ccc = B.id
+set A.rem = B.name;
+
+
+
+
+
 select 
 *
 from

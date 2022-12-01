@@ -1,3 +1,16 @@
+update ChitStatus A
+inner join chits B
+on
+A.rem = B.name
+set A.rem_id = B.id;
+
+
+
+
+
+
+
+
 
 update ChitStatus A
 inner join chits B on A.aaa = B.id

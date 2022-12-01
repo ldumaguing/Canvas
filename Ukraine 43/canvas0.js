@@ -11,8 +11,8 @@ function foo() {
     let ctx = c.getContext("2d");
     let img;
 
-    img = document.getElementById("img300");
+    img = document.getElementById("300");
     ctx.drawImage(img,95,11);
-    img = document.getElementById("img400");
+    img = document.getElementById("400");
     ctx.drawImage(img,1776,1062);
 }

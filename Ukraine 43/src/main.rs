@@ -12,7 +12,7 @@ struct Chit {
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
-    let url = "mysql://ayeka@localhost:3306/Ukraine_43";
+    let url = "mysql://ayeka:sasamichan@10.60.28.124:3306/Ukraine_43";
     let pool = Pool::new(url)?;
 
     let mut conn = pool.get_conn()?;

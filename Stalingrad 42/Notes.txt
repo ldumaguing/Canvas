@@ -12,4 +12,10 @@ B.id = A.back_id
 set A.back = B.name;
 
 
+update chits A
+inner join images B
+on
+B.id = A.front_id
+set A.size = B.size;
+
 

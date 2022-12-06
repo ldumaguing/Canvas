@@ -17,7 +17,7 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
     let selected = conn
         .query_map(
-            "SELECT id, name, front, back from chits where chitType = 4 order by id",
+            "SELECT id, name, front, back from chits where chitType = 1 order by id",
             |(id, name, front, back)| {
                 Chit { id, name, front, back }
             },

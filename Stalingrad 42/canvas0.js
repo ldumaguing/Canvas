@@ -1,7 +1,7 @@
 window.onload = function() {
     let c = document.getElementById("Canvas0");
     let ctx = c.getContext("2d");
-    let img = document.getElementById("897");
+    let img = document.getElementById("899");
     ctx.drawImage(img,0,0);
     foo();
  }

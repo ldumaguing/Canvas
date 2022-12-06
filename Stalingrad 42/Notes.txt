@@ -19,3 +19,26 @@ B.id = A.front_id
 set A.size = B.size;
 
 
+
+
+alter table chits add size int;
+
+ 32140
+32264
+
+update chits set chitType = 1
+where
+size >= 32140
+and
+size <= 32264;
+
+
+
+
+select * from chits where name like 'stal42%' and chitType = 0;
+
+
+
+update chits set chitType = 4 where name like 'stal42%' and chitType = 0;
+
+

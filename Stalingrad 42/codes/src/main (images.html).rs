@@ -15,7 +15,7 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
     let selected = conn
         .query_map(
-            "SELECT id, name from images where isMech = 1 order by name",
+            "SELECT id, name from images where imageType = 1 order by name",
             |(id, name)| {
                 Image { id, name }
             },

@@ -5,19 +5,20 @@ use mysql::prelude::*;
 struct Image {
     id: i32,
     name: Option<String>,
+    is_mech: i32,
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
-    let url = "mysql://ayeka@localhost:3306/Stalingrad_42";
+    let url = "mysql://ayeka:sasamichan@fish1:3306/Stalingrad_42";
     let pool = Pool::new(url)?;
 
     let mut conn = pool.get_conn()?;
 
     let selected = conn
         .query_map(
-            "SELECT id, name from images where isMech = 1 order by name",
-            |(id, name)| {
-                Image { id, name }
+            "SELECT id, name, isMech from images where imageType < 2 and isMech != -1 order by name",
+            |(id, name, is_mech)| {
+                Image { id, name, is_mech }
             },
     )?;
 
@@ -32,8 +33,15 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
         println!("<td>{}</td>", chit.id);
         println!("<td><img src=\"/opt/Vassal/Stalingrad 42/{}\" ></td>",
             chit.name.as_ref().unwrap().to_string() );
-        println!("<td>{}</td>",
-            chit.name.as_ref().unwrap().to_string() );
+
+        if chit.is_mech > 0 {
+            println!("<td style=\"background-color:red;\">{}</td>", chit.name.as_ref().unwrap().to_string() );
+        } else {
+            println!("<td>{}</td>", chit.name.as_ref().unwrap().to_string() );
+        }
+
+
+
         /*
         match chit.back.as_ref() {
             None => println!("<td></td>"),

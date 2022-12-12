@@ -34,8 +34,8 @@ update images set UnitID = '19' where id = 96;
 update images set UnitID = '19' where id = 97;
 update images set UnitID = '1' where id = 98;
 update images set UnitID = '1' where id = 99;
-update images set UnitID = '1 RF' where id = 102;
-update images set UnitID = '1 RF' where id = 103;
+update images set UnitID = '1RF' where id = 102;
+update images set UnitID = '1RF' where id = 103;
 update images set UnitID = '210' where id = 104;
 update images set UnitID = '213' where id = 105;
 update images set UnitID = '228' where id = 106;
@@ -353,3 +353,226 @@ update images set UnitID = '151+392' where id = 511;
 update images set UnitID = '153' where id = 512;
 update images set UnitID = '153' where id = 513;
 update images set UnitID = '156+157' where id = 514;
+update images set UnitID = '156+157' where id = 515;
+update images set UnitID = '159+346' where id = 516;
+update images set UnitID = '159+346' where id = 517;
+update images set UnitID = '159' where id = 518;
+update images set UnitID = '159' where id = 519;
+update images set UnitID = '15' where id = 520;
+update images set UnitID = '15' where id = 521;
+update images set UnitID = '15KK' where id = 522;
+update images set UnitID = '160' where id = 523;
+update images set UnitID = '160' where id = 524;
+update images set UnitID = '161+167' where id = 525;
+update images set UnitID = '161+167' where id = 526;
+update images set UnitID = '162+300' where id = 527;
+update images set UnitID = '162+300' where id = 528;
+update images set UnitID = '169' where id = 529;
+update images set UnitID = '169' where id = 530;
+update images set UnitID = '16' where id = 531;
+update images set UnitID = '16' where id = 532;
+update images set UnitID = '16' where id = 533;
+update images set UnitID = '173+260' where id = 534;
+update images set UnitID = '173+260' where id = 535;
+update images set UnitID = '174+232' where id = 536;
+update images set UnitID = '174+232' where id = 537;
+update images set UnitID = '17' where id = 538;
+update images set UnitID = '17' where id = 539;
+update images set UnitID = '18+205' where id = 540;
+update images set UnitID = '18+205' where id = 541;
+update images set UnitID = '184+192' where id = 542;
+update images set UnitID = '184+192' where id = 543;
+update images set UnitID = '18' where id = 544;
+update images set UnitID = '18' where id = 545;
+update images set UnitID = '195' where id = 546;
+update images set UnitID = '195' where id = 547;
+update images set UnitID = '196' where id = 548;
+update images set UnitID = '196' where id = 549;
+update images set UnitID = '197+203' where id = 550;
+update images set UnitID = '197+203' where id = 551;
+update images set UnitID = '199+278' where id = 552;
+update images set UnitID = '199+278' where id = 553;
+update images set UnitID = '19' where id = 554;
+update images set UnitID = '1' where id = 556;
+update images set UnitID = '1C' where id = 558;
+update images set UnitID = '1Gd' where id = 559;
+update images set UnitID = '1' where id = 560;
+update images set UnitID = '1' where id = 561;
+update images set UnitID = '1' where id = 562;
+update images set UnitID = '1' where id = 563;
+update images set UnitID = '1' where id = 564;
+update images set UnitID = '1' where id = 565;
+update images set UnitID = '1' where id = 566;
+update images set UnitID = '1' where id = 567;
+update images set UnitID = '1' where id = 568;
+update images set UnitID = '1' where id = 569;
+update images set UnitID = '1' where id = 570;
+update images set UnitID = '1TD' where id = 571;
+update images set UnitID = '2+15' where id = 572;
+update images set UnitID = '20' where id = 573;
+update images set UnitID = '20' where id = 574;
+update images set UnitID = '212' where id = 575;
+update images set UnitID = '212' where id = 576;
+update images set UnitID = '214+229' where id = 577;
+update images set UnitID = '214+229' where id = 578;
+update images set UnitID = '216' where id = 579;
+update images set UnitID = '216' where id = 580;
+update images set UnitID = '218+349' where id = 581;
+update images set UnitID = '218+349' where id = 582;
+update images set UnitID = '219' where id = 583;
+update images set UnitID = '219' where id = 584;
+update images set UnitID = '221+231' where id = 585;
+update images set UnitID = '221+231' where id = 586;
+update images set UnitID = '223+389' where id = 587;
+update images set UnitID = '223+389' where id = 588;
+update images set UnitID = '226+343' where id = 589;
+update images set UnitID = '226+343' where id = 590;
+update images set UnitID = '227' where id = 591;
+update images set UnitID = '227' where id = 592;
+update images set UnitID = '228+347' where id = 593;
+update images set UnitID = '228+347' where id = 594;
+update images set UnitID = '22' where id = 595;
+update images set UnitID = '22' where id = 596;
+update images set UnitID = '23+24' where id = 597;
+update images set UnitID = '23+24' where id = 598;
+update images set UnitID = '233+273' where id = 599;
+update images set UnitID = '233+273' where id = 600;
+update images set UnitID = '236' where id = 601;
+update images set UnitID = '236' where id = 602;
+update images set UnitID = '237+340' where id = 603;
+update images set UnitID = '237+340' where id = 604;
+update images set UnitID = '23' where id = 605;
+update images set UnitID = '23' where id = 606;
+update images set UnitID = '240' where id = 607;
+update images set UnitID = '240' where id = 608;
+update images set UnitID = '242+255' where id = 609;
+update images set UnitID = '242+255' where id = 610;
+update images set UnitID = '248' where id = 611;
+update images set UnitID = '248' where id = 612;
+update images set UnitID = '24' where id = 613;
+update images set UnitID = '24' where id = 614;
+update images set UnitID = '24' where id = 615;
+update images set UnitID = '24' where id = 616;
+update images set UnitID = '252+258' where id = 617;
+update images set UnitID = '252+258' where id = 618;
+update images set UnitID = '25' where id = 619;
+update images set UnitID = '25' where id = 620;
+update images set UnitID = '25' where id = 621;
+update images set UnitID = '25' where id = 622;
+update images set UnitID = '261' where id = 623;
+update images set UnitID = '261' where id = 624;
+update images set UnitID = '266' where id = 625;
+update images set UnitID = '266' where id = 626;
+update images set UnitID = '26Res' where id = 627;
+update images set UnitID = '26' where id = 628;
+update images set UnitID = '26' where id = 629;
+update images set UnitID = '270' where id = 630;
+update images set UnitID = '270' where id = 631;
+update images set UnitID = '275' where id = 632;
+update images set UnitID = '275' where id = 633;
+update images set UnitID = '276+319' where id = 634;
+update images set UnitID = '276+319' where id = 635;
+update images set UnitID = '277' where id = 636;
+update images set UnitID = '277' where id = 637;
+update images set UnitID = '27' where id = 638;
+update images set UnitID = '27' where id = 639;
+update images set UnitID = '284' where id = 640;
+update images set UnitID = '284' where id = 641;
+update images set UnitID = '28' where id = 642;
+update images set UnitID = '28' where id = 643;
+update images set UnitID = '29+204' where id = 644;
+update images set UnitID = '29+204' where id = 645;
+update images set UnitID = '295' where id = 646;
+update images set UnitID = '295' where id = 647;
+update images set UnitID = '296+318' where id = 648;
+update images set UnitID = '296+318' where id = 649;
+update images set UnitID = '297' where id = 650;
+update images set UnitID = '297' where id = 651;
+update images set UnitID = '299+308' where id = 652;
+update images set UnitID = '299+308' where id = 653;
+update images set UnitID = '2C' where id = 654;
+update images set UnitID = '2' where id = 655;
+update images set UnitID = '2' where id = 656;
+update images set UnitID = '2' where id = 657;
+update images set UnitID = '2' where id = 658;
+update images set UnitID = '2' where id = 659;
+update images set UnitID = '2' where id = 660;
+update images set UnitID = '2' where id = 661;
+update images set UnitID = '2TD' where id = 662;
+update images set UnitID = '3+49' where id = 663;
+update images set UnitID = '3+49' where id = 664;
+update images set UnitID = '301' where id = 665;
+update images set UnitID = '301' where id = 666;
+update images set UnitID = '309' where id = 667;
+update images set UnitID = '309' where id = 668;
+update images set UnitID = '30Irk' where id = 669;
+update images set UnitID = '30Irk' where id = 670;
+update images set UnitID = '315+316' where id = 671;
+update images set UnitID = '315+316' where id = 672;
+update images set UnitID = '317+337' where id = 673;
+update images set UnitID = '317+337' where id = 674;
+update images set UnitID = '31' where id = 675;
+update images set UnitID = '31' where id = 676;
+update images set UnitID = '320+416' where id = 677;
+update images set UnitID = '320+416' where id = 678;
+update images set UnitID = '321' where id = 679;
+update images set UnitID = '321' where id = 680;
+update images set UnitID = '328+408' where id = 681;
+update images set UnitID = '328+408' where id = 682;
+update images set UnitID = '32' where id = 683;
+update images set UnitID = '32' where id = 684;
+update images set UnitID = '335+341' where id = 685;
+update images set UnitID = '335+341' where id = 686;
+update images set UnitID = '339' where id = 687;
+update images set UnitID = '339' where id = 688;
+update images set UnitID = '33' where id = 689;
+update images set UnitID = '33' where id = 690;
+update images set UnitID = '34' where id = 691;
+update images set UnitID = '34' where id = 692;
+update images set UnitID = '351' where id = 693;
+update images set UnitID = '351' where id = 694;
+update images set UnitID = '353' where id = 695;
+update images set UnitID = '353' where id = 696;
+update images set UnitID = '35' where id = 697;
+update images set UnitID = '35' where id = 698;
+update images set UnitID = '36' where id = 699;
+update images set UnitID = '36' where id = 700;
+update images set UnitID = '37+39' where id = 701;
+update images set UnitID = '37+39' where id = 702;
+update images set UnitID = '38+175' where id = 703;
+update images set UnitID = '38+175' where id = 704;
+update images set UnitID = '38+41' where id = 705;
+update images set UnitID = '38+41' where id = 706;
+update images set UnitID = '383' where id = 707;
+update images set UnitID = '383' where id = 708;
+update images set UnitID = '387' where id = 709;
+update images set UnitID = '387' where id = 710;
+update images set UnitID = '38' where id = 711;
+update images set UnitID = '394' where id = 712;
+update images set UnitID = '394' where id = 713;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,3 +1,30 @@
 Upper Left Hex "Center": 293, 141
 
 
+
+create table images (
+id   int primary key,
+name varchar(80),
+size int
+);
+
+
+select name, id from images order by name desc;
+
+
+
+create table chits (
+id       int primary key,
+name     varchar(80),
+front_id int,
+back_id  int
+);
+
+
+
+
+update chits A
+inner join images B
+on
+B.id = A.back_id
+set A.back = B.name;

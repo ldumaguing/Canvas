@@ -16,7 +16,7 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
     let selected = conn
         .query_map(
-            "SELECT id, name, unitType from images where pieceType = 'combat' or pieceType = 'chit' or pieceType = 'weapon' or pieceType = 'CO' order by unitType, name",
+            "SELECT id, name, unitType from images where pieceType = 'chart' order by unitType, name",
             |(id, name, unittype)| {
                 Image { id, name, unittype }
             },

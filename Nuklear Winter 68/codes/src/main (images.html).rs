@@ -5,7 +5,6 @@ use mysql::prelude::*;
 struct Image {
     id: i32,
     name: Option<String>,
-    unittype: Option<String>,
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
@@ -16,16 +15,15 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
     let selected = conn
         .query_map(
-            "SELECT id, name, unitType from images where pieceType = 'combat' or pieceType = 'chit' or pieceType = 'weapon' or pieceType = 'CO' order by unitType, name",
-            |(id, name, unittype)| {
-                Image { id, name, unittype }
+            "SELECT id, name from images where pieceType = 'combat' order by name",
+            |(id, name)| {
+                Image { id, name }
             },
     )?;
 
     println!("<!DOCTYPE html>");
     println!("<html><head></head><body><table>");
     println!("<tr><th>Id</th><th>Image</th>");
-    println!("<th>Unit Type</th>");
     // println!("<th>Back</th><th>Name</th></tr>");
     println!("<th>Name</th></tr>");
 
@@ -34,16 +32,14 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
         println!("<td>{}</td>", chit.id);
         println!("<td><img src=\"/opt/Vassal/Nuklear Winter 68/{}\" ></td>",
             chit.name.as_ref().unwrap().to_string() );
-
-        match chit.unittype.as_ref() {
-            None => println!("<td></td>"),
-            Some(x) => println!("<td>{}</td>", x.to_string()),
-        }
-
         println!("<td>{}</td>",
             chit.name.as_ref().unwrap().to_string() );
-
-
+        /*
+        match chit.back.as_ref() {
+            None => println!("<td></td>"),
+            Some(x) => println!("<td><img src=\"/opt/Vassal/Stalingrad 42/{}\" ></td>", x.to_string()),
+        }
+        */
         // println!("<td>{}</td>", chit.name.as_ref().unwrap().to_string());
         println!("</tr>");
 	}

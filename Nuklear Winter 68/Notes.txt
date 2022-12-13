@@ -28,3 +28,19 @@ inner join images B
 on
 B.id = A.back_id
 set A.back = B.name;
+
+
+
+
+update chits A
+inner join images B
+on
+A.front_id = B.id
+set A.pieceType = B.pieceType;
+
+
+
+
+
+
+

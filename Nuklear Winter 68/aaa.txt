@@ -1,0 +1,197 @@
+total 12968
+drwx------  2 ayeka ayeka   12288 Apr 16  2012 .
+drwxrwxr-x 18 ayeka ayeka    4096 Dec  5 20:55 ..
+-rw-rw-r--  1 ayeka ayeka   20095 Apr 15  2012 1_130 Chit front.png
+-rw-rw-r--  1 ayeka ayeka   31772 Apr 15  2012 1_130 CO back.png
+-rw-rw-r--  1 ayeka ayeka   31872 Apr 15  2012 1_130 CO front.png
+-rw-rw-r--  1 ayeka ayeka   28654 Apr 15  2012 1_130 E100 back.png
+-rw-rw-r--  1 ayeka ayeka   28325 Apr 15  2012 1_130 E100 front.png
+-rw-rw-r--  1 ayeka ayeka   30244 Apr 15  2012 1_130 Hummel back.png
+-rw-rw-r--  1 ayeka ayeka   30074 Apr 15  2012 1_130 Hummel front.png
+-rw-rw-r--  1 ayeka ayeka   29492 Apr 15  2012 1_130 KT back.png
+-rw-rw-r--  1 ayeka ayeka   29167 Apr 15  2012 1_130 KT front.png
+-rw-rw-r--  1 ayeka ayeka   30206 Apr 15  2012 1_130 Puma back.png
+-rw-rw-r--  1 ayeka ayeka   29780 Apr 15  2012 1_130 Puma front.png
+-rw-rw-r--  1 ayeka ayeka   33430 Feb 21  2013 1_7 SS 250 back.png
+-rw-rw-r--  1 ayeka ayeka   33022 Feb 21  2013 1_7 SS 250 front.png
+-rw-rw-r--  1 ayeka ayeka   20300 Apr 15  2012 1_7 SS Chit front.png
+-rw-rw-r--  1 ayeka ayeka   32057 Apr 15  2012 1_7 SS CO back.png
+-rw-rw-r--  1 ayeka ayeka   31757 Apr 15  2012 1_7 SS CO front.png
+-rw-rw-r--  1 ayeka ayeka   33992 Feb 21  2013 1_7 SS VT back.png
+-rw-rw-r--  1 ayeka ayeka   34103 Feb 21  2013 1_7 SS VT front.png
+-rw-rw-r--  1 ayeka ayeka    1679 Oct 10  2009 1.png
+-rw-rw-r--  1 ayeka ayeka   29314 Apr 16  2012 1st Ranger Chit front.png
+-rw-rw-r--  1 ayeka ayeka   41759 Feb 21  2013 1st Ranger CO back.png
+-rw-rw-r--  1 ayeka ayeka   42071 Feb 21  2013 1st Ranger CO front.png
+-rw-rw-r--  1 ayeka ayeka   36254 Feb 21  2013 1st Ranger M113 back.png
+-rw-rw-r--  1 ayeka ayeka   35994 Feb 21  2013 1st Ranger M113 front.png
+-rw-rw-r--  1 ayeka ayeka   36252 Feb 21  2013 1st Ranger M60 back.png
+-rw-rw-r--  1 ayeka ayeka   35638 Feb 21  2013 1st Ranger M60 front.png
+-rw-rw-r--  1 ayeka ayeka   41827 Feb 21  2013 1st Ranger Ranger back.png
+-rw-rw-r--  1 ayeka ayeka   41773 Feb 21  2013 1st Ranger Ranger front.png
+-rw-rw-r--  1 ayeka ayeka   31836 Apr 15  2012 2_130 250 back.png
+-rw-rw-r--  1 ayeka ayeka   31604 Apr 15  2012 2_130 250 front.png
+-rw-rw-r--  1 ayeka ayeka   20745 Apr 15  2012 2_130 chit front.png
+-rw-rw-r--  1 ayeka ayeka   31742 Apr 15  2012 2_130 CO back.png
+-rw-rw-r--  1 ayeka ayeka   31800 Apr 15  2012 2_130 CO front.png
+-rw-rw-r--  1 ayeka ayeka   29126 Apr 15  2012 2_130 E100 back.png
+-rw-rw-r--  1 ayeka ayeka   28746 Apr 15  2012 2_130 E100 front.png
+-rw-rw-r--  1 ayeka ayeka   36160 Feb 21  2013 2_130 Fall back.png
+-rw-rw-r--  1 ayeka ayeka   36078 Feb 21  2013 2_130 Fall front.png
+-rw-rw-r--  1 ayeka ayeka   30417 Apr 15  2012 2_130 JT back.png
+-rw-rw-r--  1 ayeka ayeka   29422 Apr 15  2012 2_130 JT front.png
+-rw-rw-r--  1 ayeka ayeka   35110 Feb 21  2013 2nd Ranger BRDM back.png
+-rw-rw-r--  1 ayeka ayeka   34873 Feb 21  2013 2nd Ranger BRDM front.png
+-rw-rw-r--  1 ayeka ayeka   29426 Apr 16  2012 2nd Ranger Chit front.png
+-rw-rw-r--  1 ayeka ayeka   41556 Feb 21  2013 2nd Ranger CO back.png
+-rw-rw-r--  1 ayeka ayeka   41879 Feb 21  2013 2nd Ranger CO front.png
+-rw-rw-r--  1 ayeka ayeka   35915 Feb 21  2013 2nd Ranger M113 back.png
+-rw-rw-r--  1 ayeka ayeka   35465 Feb 21  2013 2nd Ranger M113 front.png
+-rw-rw-r--  1 ayeka ayeka   35626 Feb 21  2013 2nd Ranger M60 back.png
+-rw-rw-r--  1 ayeka ayeka   35328 Feb 21  2013 2nd Ranger M60 front.png
+-rw-rw-r--  1 ayeka ayeka   41556 Feb 21  2013 2nd Ranger Ranger back.png
+-rw-rw-r--  1 ayeka ayeka   41583 Feb 21  2013 2nd Ranger Ranger front.png
+-rw-rw-r--  1 ayeka ayeka    1705 Oct 10  2009 2.png
+-rw-rw-r--  1 ayeka ayeka    2028 Oct 10  2009 3.png
+-rw-rw-r--  1 ayeka ayeka    2180 Oct 10  2009 4.png
+-rw-rw-r--  1 ayeka ayeka   27976 Apr 16  2012 4th G Chit front.png
+-rw-rw-r--  1 ayeka ayeka   42029 Feb 21  2013 4th G CO back.png
+-rw-rw-r--  1 ayeka ayeka   42305 Feb 21  2013 4th G CO front.png
+-rw-rw-r--  1 ayeka ayeka   36289 Feb 21  2013 4th G T64 back.png
+-rw-rw-r--  1 ayeka ayeka   35885 Feb 21  2013 4th G T64 front.png
+-rw-rw-r--  1 ayeka ayeka   20541 Apr 15  2012 501SS Chit front.png
+-rw-rw-r--  1 ayeka ayeka   31860 Apr 15  2012 501SS CO back.png
+-rw-rw-r--  1 ayeka ayeka   32065 Apr 15  2012 501SS CO front.png
+-rw-rw-r--  1 ayeka ayeka   31116 Apr 15  2012 501SS E100 back.png
+-rw-rw-r--  1 ayeka ayeka   30723 Apr 15  2012 501SS E100 front.png
+-rw-rw-r--  1 ayeka ayeka   33740 Feb 21  2013 502SS 250 back.png
+-rw-rw-r--  1 ayeka ayeka   33205 Feb 21  2013 502SS 250 front.png
+-rw-rw-r--  1 ayeka ayeka   21167 Apr 15  2012 502SS Chit front.png
+-rw-rw-r--  1 ayeka ayeka   31727 Apr 16  2012 502SS CO back.png
+-rw-rw-r--  1 ayeka ayeka   31758 Apr 15  2012 502SS CO front.png
+-rw-rw-r--  1 ayeka ayeka   31207 Apr 15  2012 502SS E100 back.png
+-rw-rw-r--  1 ayeka ayeka   30727 Apr 15  2012 502SS E100 front.png
+-rw-rw-r--  1 ayeka ayeka   32198 Apr 15  2012 502SS JT back.png
+-rw-rw-r--  1 ayeka ayeka   31419 Apr 15  2012 502SS JT front.png
+-rw-rw-r--  1 ayeka ayeka   33942 Feb 21  2013 502SS VT back.png
+-rw-rw-r--  1 ayeka ayeka   33682 Feb 21  2013 502SS VT front.png
+-rw-rw-r--  1 ayeka ayeka   29023 Apr 16  2012 58th Chit front.png
+-rw-rw-r--  1 ayeka ayeka   42208 Feb 21  2013 58th CO back.png
+-rw-rw-r--  1 ayeka ayeka   42937 Feb 21  2013 58th CO front.png
+-rw-rw-r--  1 ayeka ayeka   37410 Feb 21  2013 58th M113 back.png
+-rw-rw-r--  1 ayeka ayeka   37046 Feb 21  2013 58th M113 front.png
+-rw-rw-r--  1 ayeka ayeka   42629 Feb 21  2013 58th Rangers back.png
+-rw-rw-r--  1 ayeka ayeka   42405 Feb 21  2013 58th Rangers front.png
+-rw-rw-r--  1 ayeka ayeka   41974 Feb 21  2013 58th Spetsnaz back.png
+-rw-rw-r--  1 ayeka ayeka   41699 Feb 21  2013 58th Spetsnaz front.png
+-rw-rw-r--  1 ayeka ayeka   36893 Feb 21  2013 58th T62 back.png
+-rw-rw-r--  1 ayeka ayeka   36357 Feb 21  2013 58th T62 front.png
+-rw-rw-r--  1 ayeka ayeka    2273 Oct 10  2009 5.png
+-rw-rw-r--  1 ayeka ayeka    2310 Oct 10  2009 6.png
+-rw-rw-r--  1 ayeka ayeka   30007 Apr 16  2012 9K32 front.png
+-rw-rw-r--  1 ayeka ayeka   29925 Apr 16  2012 A6 front.png
+-rw-rw-r--  1 ayeka ayeka   27227 Apr 16  2012 Advance.png
+-rw-rw-r--  1 ayeka ayeka    5401 Sep 24 07:30 armies-icon.png
+-rw-rw-r--  1 ayeka ayeka    2423 Aug 20  2011 Army_Menu.png
+-rw-rw-r--  1 ayeka ayeka    5272 Sep 24 07:25 assault-icon.png
+-rw-rw-r--  1 ayeka ayeka  852208 Sep 23 21:22 assault.png
+-rw-rw-r--  1 ayeka ayeka   38117 Feb 21  2013 Barrage 3.png
+-rw-rw-r--  1 ayeka ayeka   36840 Apr 17  2012 Bio 1.png
+-rw-rw-r--  1 ayeka ayeka   20251 Apr 16  2012 Black control.png
+-rw-rw-r--  1 ayeka ayeka   25583 Apr 16  2012 Black Hand Chit front.png
+-rw-rw-r--  1 ayeka ayeka   33964 Feb 21  2013 Blighter back.png
+-rw-rw-r--  1 ayeka ayeka   33654 Feb 21  2013 Blighter front.png
+-rw-rw-r--  1 ayeka ayeka   22117 Apr 16  2012 blue control.png
+-rw-rw-r--  1 ayeka ayeka   30789 Apr 16  2012 BRDM back.png
+-rw-rw-r--  1 ayeka ayeka   30486 Apr 16  2012 BRDM front.png
+-rw-rw-r--  1 ayeka ayeka   37204 Feb 21  2013 Chemical 3.png
+-rw-rw-r--  1 ayeka ayeka   29990 Apr 16  2012 Chemical.png
+-rw-rw-r--  1 ayeka ayeka   42652 Feb 21  2013 Chit Back.png
+-rw-rw-r--  1 ayeka ayeka    4907 Aug 13 07:18 Combat-icon.png
+-rw-rw-r--  1 ayeka ayeka  114562 Aug 13 11:51 Combat.jpg
+-rw-rw-r--  1 ayeka ayeka   27358 Apr 16  2012 Cowboys Chit front.png
+-rw-rw-r--  1 ayeka ayeka   35115 Feb 21  2013 Cowboys Huey back.png
+-rw-rw-r--  1 ayeka ayeka   34995 Feb 21  2013 Cowboys Huey front.png
+-rw-rw-r--  1 ayeka ayeka    4351 Sep 22 18:27 cup-icon.png
+-rw-rw-r--  1 ayeka ayeka   33355 Sep 22 18:27 cup.jpg
+-rw-rw-r--  1 ayeka ayeka   32571 Apr 16  2012 Derek Castle.png
+-rw-rw-r--  1 ayeka ayeka   31254 Apr 16  2012 Diskord front.png
+-rw-rw-r--  1 ayeka ayeka    4973 Sep 22 21:16 Event-icon.png
+-rw-rw-r--  1 ayeka ayeka   28194 Aug 12 21:15 Event.png
+-rw-rw-r--  1 ayeka ayeka    5055 Sep 22 18:22 Finished-icon2.png
+-rw-rw-r--  1 ayeka ayeka   28832 Apr 16  2012 Finished.png
+-rw-rw-r--  1 ayeka ayeka    5121 Sep 24 07:25 fire-icon.png
+-rw-rw-r--  1 ayeka ayeka  793971 Sep 23 21:23 fire.png
+-rw-rw-r--  1 ayeka ayeka    3965 Sep 26 09:11 forward-button.png
+-rw-rw-r--  1 ayeka ayeka    2614 Sep 22 19:51 globe-dark-icon.png
+-rw-rw-r--  1 ayeka ayeka    2853 Sep 22 19:50 globe-icon.png
+-rw-rw-r--  1 ayeka ayeka   28643 Apr 16  2012 High Morale.png
+-rw-rw-r--  1 ayeka ayeka   27635 Apr 15  2012 Hummel back.png
+-rw-rw-r--  1 ayeka ayeka   27319 Apr 15  2012 Hummel front.png
+-rw-rw-r--  1 ayeka ayeka    3253 Sep 22 19:45 los-icon.png
+-rw-rw-r--  1 ayeka ayeka   26234 Apr 15  2012 Luftf front.png
+-rw-rw-r--  1 ayeka ayeka   32728 Apr 16  2012 M109 back.png
+-rw-rw-r--  1 ayeka ayeka   32144 Apr 16  2012 M109 front.png
+-rw-rw-r--  1 ayeka ayeka   29212 Apr 16  2012 M-60 front.png
+-rw-rw-r--  1 ayeka ayeka   28369 Apr 16  2012 M72Law front.png
+-rw-rw-r--  1 ayeka ayeka    3441 Sep 22 18:20 magnify-minus.png
+-rw-rw-r--  1 ayeka ayeka    3561 Sep 22 18:20 magnify-plus.png
+-rw-rw-r--  1 ayeka ayeka    3384 Sep 22 18:20 magnify-size.png
+-rw-rw-r--  1 ayeka ayeka 5595082 Aug 13 11:19 Map.jpg
+-rw-rw-r--  1 ayeka ayeka    2240 Sep 22 18:22 Map-mini-icon.png
+-rw-rw-r--  1 ayeka ayeka   34252 Feb 21  2013 Megrim back.png
+-rw-rw-r--  1 ayeka ayeka   33328 Feb 21  2013 Megrim front.png
+-rw-rw-r--  1 ayeka ayeka   25099 Apr 15  2012 MG42 front.png
+-rw-rw-r--  1 ayeka ayeka   34489 Feb 21  2013 Mines.png
+-rw-rw-r--  1 ayeka ayeka    4655 Sep 24 06:41 mini-map-icon.png
+-rw-rw-r--  1 ayeka ayeka    3175 Sep 22 20:59 moved-icon.png
+-rw-rw-r--  1 ayeka ayeka    4455 Aug 16 20:41 Moved.png
+-rw-rw-r--  1 ayeka ayeka   36596 Feb 21  2013 Nuclear 6.png
+-rw-rw-r--  1 ayeka ayeka   24082 Apr 16  2012 Objective.png
+-rw-rw-r--  1 ayeka ayeka    5067 Sep 22 19:32 OOC-icon.png
+-rw-rw-r--  1 ayeka ayeka   31589 Apr 16  2012 OOC.png
+-rw-rw-r--  1 ayeka ayeka   26714 Apr 15  2012 Ostwind back.png
+-rw-rw-r--  1 ayeka ayeka   27144 Apr 15  2012 Ostwind front.png
+-rw-rw-r--  1 ayeka ayeka   33788 Feb 21  2013 Pest back.png
+-rw-rw-r--  1 ayeka ayeka   32875 Feb 21  2013 Pest front.png
+-rw-rw-r--  1 ayeka ayeka   25567 Apr 15  2012 PFT3 front.png
+-rw-rw-r--  1 ayeka ayeka   27706 Apr 15  2012 Puma back.png
+-rw-rw-r--  1 ayeka ayeka   26979 Apr 15  2012 Puma front.png
+-rw-rw-r--  1 ayeka ayeka   26516 Apr 16  2012 Rad.png
+-rw-rw-r--  1 ayeka ayeka   33504 Feb 21  2013 Rancor back.png
+-rw-rw-r--  1 ayeka ayeka   33259 Feb 21  2013 Rancor front.png
+-rw-rw-r--  1 ayeka ayeka   39061 Feb 21  2013 Ravager back.png
+-rw-rw-r--  1 ayeka ayeka   38928 Feb 21  2013 Ravager front.png
+-rw-rw-r--  1 ayeka ayeka   23337 Apr 16  2012 Red control.png
+-rw-rw-r--  1 ayeka ayeka    4978 Sep 26 09:13 retire-button.png
+-rw-rw-r--  1 ayeka ayeka   35965 Feb 21  2013 Sandbags.png
+-rw-rw-r--  1 ayeka ayeka   39521 Feb 21  2013 Scourge back.png
+-rw-rw-r--  1 ayeka ayeka   40051 Feb 21  2013 Scourge front.png
+-rw-rw-r--  1 ayeka ayeka    3402 Sep 22 21:11 screenshot-icon.png
+-rw-rw-r--  1 ayeka ayeka   31797 Apr 16  2012 Scud front.png
+-rw-rw-r--  1 ayeka ayeka    4539 Sep 26 09:12 server-button.png
+-rw-rw-r--  1 ayeka ayeka   17051 Apr 15  2012 SG2 Chit front.png
+-rw-rw-r--  1 ayeka ayeka   27748 Apr 15  2012 SG2 Saucer back.png
+-rw-rw-r--  1 ayeka ayeka   29211 Apr 15  2012 SG2 Saucer front.png
+-rw-rw-r--  1 ayeka ayeka   28715 Apr 16  2012 Shaken.png
+-rw-rw-r--  1 ayeka ayeka   33239 Feb 21  2013 Shellholes.png
+-rw-rw-r--  1 ayeka ayeka   37560 Feb 21  2013 Smoke 3.png
+-rw-rw-r--  1 ayeka ayeka   26445 Apr 15  2012 Smoke L1.png
+-rw-rw-r--  1 ayeka ayeka   28500 Apr 16  2012 Smoke L2.png
+-rw-rw-r--  1 ayeka ayeka  207761 Apr 18  2012 Splash.gif
+-rw-rw-r--  1 ayeka ayeka   25546 Apr 15  2012 Stuka front.png
+-rw-rw-r--  1 ayeka ayeka   27109 Apr 16  2012 Turn.png
+-rw-rw-r--  1 ayeka ayeka    4741 Sep 26 09:12 undo.png
+-rw-rw-r--  1 ayeka ayeka   24995 Apr 15  2012 V2 front.png
+-rw-rw-r--  1 ayeka ayeka   37334 Feb 21  2013 Vehicle Crew.png
+-rw-rw-r--  1 ayeka ayeka   26595 Apr 16  2012 Vympel Chit front.png
+-rw-rw-r--  1 ayeka ayeka   41567 Feb 21  2013 Vympel Co back.png
+-rw-rw-r--  1 ayeka ayeka   42092 Feb 21  2013 Vympel Co front.png
+-rw-rw-r--  1 ayeka ayeka   40905 Feb 21  2013 Vympel Spetsnaz back.png
+-rw-rw-r--  1 ayeka ayeka   40715 Feb 21  2013 Vympel Spetsnaz front.png
+-rw-rw-r--  1 ayeka ayeka   32558 Apr 15  2012 Wreck.png
+-rw-rw-r--  1 ayeka ayeka   34350 Feb 21  2013 XM134 front.png
+-rw-rw-r--  1 ayeka ayeka   36181 Feb 21  2013 Zealots back.png
+-rw-rw-r--  1 ayeka ayeka   35928 Feb 21  2013 Zealots front.png
+-rw-rw-r--  1 ayeka ayeka   32363 Apr 16  2012 ZSU23 back.png
+-rw-rw-r--  1 ayeka ayeka   32300 Apr 16  2012 ZSU23 front.png

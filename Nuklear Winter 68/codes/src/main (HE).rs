@@ -5,8 +5,9 @@ use mysql::prelude::*;
 struct Image {
     id: i32,
     name: Option<String>,
-    val1: i32, // Armor_Red
-    val2: i32, // Armor_Blu
+    val1: i32, // HE_Fire
+    val2: i32, // HE_Rang_Wht
+    val3: i32, // HE_Rang_Yel
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
@@ -17,9 +18,9 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
     let selected = conn
         .query_map(
-            "SELECT id, name, Speed, minSpeed from images where pieceType = 'combat' order by id",
-            |(id, name, val1, val2)| {
-                Image { id, name, val1, val2 }
+            "SELECT id, name, HE_Fire, HE_Rang_Wht, HE_Rang_Yel from images where pieceType = 'combat' order by id",
+            |(id, name, val1, val2, val3)| {
+                Image { id, name, val1, val2, val3 }
             },
     )?;
 
@@ -30,7 +31,7 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     println!("<tr><th>Id</th><th>Image</th>");
     println!("<th></th>");
     println!("<th></th>");
-    // println!("<th></th>");
+    println!("<th></th>");
     // println!("<th></th>");
     // println!("<th>Back</th><th>Name</th></tr>");
     println!("<th>Name</th></tr>");
@@ -47,14 +48,14 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
             Some(x) => println!("<td>{}</td>", x.to_string()),
         }
 */
-        if chit.val1 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val1); }
+        if chit.val1 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val1); }
         else { println!("<td>---</td>"); }
 
         if chit.val2 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val2); }
         else { println!("<td>---</td>"); }
 
-        // if chit.val3 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val3); }
-        // else { println!("<td>---</td>"); }
+        if chit.val3 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val3); }
+        else { println!("<td>---</td>"); }
 
         // if chit.val4 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val4); }
         // else { println!("<td>---</td>"); }

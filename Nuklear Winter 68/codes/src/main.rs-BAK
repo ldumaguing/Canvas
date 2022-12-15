@@ -13,6 +13,8 @@ struct Image {
     val6: i32,
     val7: i32,
     val8: i32,
+    val9: i32,
+    val10: i32,
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
@@ -24,8 +26,9 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     let selected = conn
         .query_map(
             "SELECT id, name,
-               AP_Fire_Red, AP_Fire_Blu, AP_Rang_Red, AP_Rang_Wht, AP_Rang_Blu,
-               HE_Fire, HE_Rang_Wht, HE_Rang_Yel
+               AP_Fire_Red, AP_Fire_Blu, AP_Rang_Red, AP_Rang_Wht,
+               HE_Fire, HE_Rang_Wht, HE_Rang_Yel,
+               Armor_Red, Armor_Blu, Armor_Yel
             from images where
             pieceType = 'command' or
             pieceType = 'combat'  or
@@ -33,10 +36,27 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
             pieceType = 'marker'  or
             pieceType = 'OBA'
             order by name, id",
-            |(id, name, val1, val2, val3, val4, val5, val6, val7, val8)| {
-                Image { id, name, val1, val2, val3, val4, val5, val6, val7, val8 }
+            |(id, name, val1, val2, val3, val4, val5, val6, val7, val8, val9, val10)| {
+                Image { id, name, val1, val2, val3, val4, val5, val6, val7, val8, val9, val10 }
             },
     )?;
+
+/*
+for chit in selected {
+println!("\"/opt/Vassal/Nuklear Winter 68/{}\"",
+            chit.name.as_ref().unwrap().to_string() );
+}
+*/
+
+
+
+
+
+
+
+
+
+
 
     println!("<!DOCTYPE html>");
     println!("<html><head>");
@@ -46,6 +66,9 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     println!("<th>Image</th>");
     println!("<th></th>");
     println!("<th></th>");
+    println!("<th></th>");
+    println!("<th></th>");
+    println!("<th></th>"); // divider
     println!("<th></th>");
     println!("<th></th>");
     println!("<th></th>");
@@ -79,19 +102,27 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
         if chit.val4 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val4); }
         else { println!("<td></td>"); }
-
-        if chit.val5 > 0 { println!("<td class=\"Blue_font\"><b>{}</b></td>", chit.val5); }
-        else { println!("<td></td>"); }
-
+        
         println!("<td>|</td>");
 
-        if chit.val6 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val6); }
+        if chit.val5 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val5); }
         else { println!("<td></td>"); }
 
-        if chit.val7 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val7); }
+        if chit.val6 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val6); }
         else { println!("<td></td>"); }
 
-        if chit.val8 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val8); }
+        if chit.val7 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val7); }
+        else { println!("<td></td>"); }
+        
+        println!("<td>|</td>");
+
+        if chit.val8 > 0 { println!("<td class=\"Red_font\"><b>{}</b></td>", chit.val8); }
+        else { println!("<td></td>"); }
+
+        if chit.val9 > 0 { println!("<td class=\"Blue_font\"><b>{}</b></td>", chit.val9); }
+        else { println!("<td></td>"); }
+
+        if chit.val10 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val10); }
         else { println!("<td></td>"); }
 
         println!("<td>|</td>");
@@ -107,7 +138,8 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
         // println!("<td>{}</td>", chit.val3);
         // println!("<td>{}</td>", chit.val4);
 
-        println!("<td>{}</td>", chit.name.as_ref().unwrap().to_string() );
+        println!("<td>{}</td>",
+            chit.name.as_ref().unwrap().to_string() );
 
 
         // println!("<td>{}</td>", chit.name.as_ref().unwrap().to_string());

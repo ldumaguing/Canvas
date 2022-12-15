@@ -10,14 +10,19 @@ struct Image {
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
-    let url = "mysql://ayeka:sasamichan@fish1:3306/Nuklear_Winter_68";
+    let url = "mysql://ayeka@localhost:3306/Nuklear_Winter_68";
     let pool = Pool::new(url)?;
 
     let mut conn = pool.get_conn()?;
 
     let selected = conn
         .query_map(
-            "SELECT id, name, Speed, minSpeed from images where pieceType = 'combat' order by id",
+            "SELECT id, name, Speed, minSpeed from images where
+            pieceType = 'command' or
+            pieceType = 'weapon'  or
+            pieceType = 'marker'  or
+            pieceType = 'OBA'
+            order by id",
             |(id, name, val1, val2)| {
                 Image { id, name, val1, val2 }
             },

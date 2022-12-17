@@ -1,3 +1,99 @@
+  1 Armor Red
+  2 Armor Blue
+  4 Armor Yellow
+  8 HE Range White/Yellow   0/8
+
+ 16 AP Fire Red
+ 32 AP Fire Blue
+ 64 AP Range Red
+128 AP Range White
+
+256 AP Range Blue
+
+******************************************************
+alter table images add column Armor int;
+alter table images add column HE int;
+alter table images add column AP int;
+alter table images add column colors int;
+alter table images add column AP_range int;
+alter table images add column HE_range int;
+
+select * from images where AP_Fire_Red > 0;
+update images set AP = AP_Fire_Red where AP_Fire_Red > 0;
+update images set colors = 16 where AP_Fire_Red > 0;
+
+select * from images where AP_Fire_Blu > 0 and AP < 0;
+update images set AP = AP_Fire_Blu where AP_Fire_Blu > 0 and AP < 0;
+update images set colors = 0 where colors is null;
+select colors | 32 from images where AP_Fire_Blu > 0;
+update images set colors = (colors | 32) where AP_Fire_Blu > 0;
+
+select * from images where AP_Rang_Red > 0;
+update images set AP_range = AP_Rang_Red where AP_Rang_Red > 0;
+
+select * from images where AP_Rang_Blu > 0;
+update images set AP_range = AP_Rang_Blu where AP_Rang_Blu > 0;
+
+select * from images where AP_Rang_Wht > 0;
+update images set AP_range = AP_Rang_Wht where AP_Rang_Wht > 0;
+
+update images set colors = (colors | 128) where AP_Rang_Wht > 0;
+
+update images set colors = (colors | 256) where AP_Rang_Blu > 0;
+
+alter table images drop column AP_Fire_Red;
+alter table images drop column AP_Fire_Blu;
+alter table images drop column AP_Rang_Red;
+alter table images drop column AP_Rang_Wht;
+alter table images drop column AP_Rang_Blu;
+
+select * from images where HE_Fire > 0;
+update images set HE = HE_Fire where HE_Fire > 0;
+alter table images drop column HE_Fire;
+
+select * from images where HE_Rang_Wht > 0;
+update images set HE_range = HE_Rang_Wht where HE_Rang_Wht > 0;
+
+select * from images where HE_Rang_Yel > 0;
+update images set HE_range = HE_Rang_Yel where HE_Rang_Yel > 0;
+update images set colors = (colors | 8) where HE_Rang_Yel > 0;
+
+update images set HE_range = 0 where HE_range is null;
+update images set AP_range = 0 where AP_range is null;
+
+alter table images drop column HE_Rang_Wht;
+alter table images drop column HE_Rang_Yel;
+
+update images set Armor = Armor_Red where Armor_Red > 0;
+update images set Armor = Armor_Blu where Armor_Blu > 0;
+update images set Armor = Armor_Yel where Armor_Yel > 0;
+
+update images set colors = (colors | 1) where Armor_Red > 0;
+update images set colors = (colors | 2) where Armor_Blu > 0;
+update images set colors = (colors | 4) where Armor_Yel > 0;
+
+alter table images drop column Armor_Red;
+alter table images drop column Armor_Blu;
+alter table images drop column Armor_Yel;
+
+update images set Armor = 0 where Armor is null;
+update images set HE = 0 where HE is null;
+update images set AP = 0 where AP is null;
+
+update images set Speed = 0 where Speed < 0;
+update images set minSpeed = 0 where minSpeed < 0;
+
+
+
+
+
+
+
+
+
+
+
+
 *************** Field: Aspects
 H: Huge
 N: NOE

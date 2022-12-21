@@ -8,7 +8,7 @@
  16 AP Fire Red/Blue    0/16
  32 AP Range Red
  64 AP Range White
-124 AP Range Blue
+128 AP Range Blue
 
 select * from images where colors & 1;
 update images set color_2 = color_2 | (colors & 1) where colors & 1;
@@ -28,6 +28,7 @@ update images set color_2 = color_2 | (colors & 16) where AP > 0 and (colors & 3
 
 select * from images where AP_range > 0;
 select * from images where colors & 128;
+update images set color_2 = color_2 | (colors & 64) where AP_range > 0 and (colors & 128);
 
 
 

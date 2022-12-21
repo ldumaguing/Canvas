@@ -28,9 +28,7 @@ update images set color_2 = color_2 | (colors & 16) where AP > 0 and (colors & 3
 
 select * from images where AP_range > 0;
 select * from images where colors & 128;
-update images set color_2 = color_2 | (colors & 64) where AP_range > 0 and (colors & 128);
-
-
+update images set color_2 = color_2 | (colors & 64) where AP > 0 and (colors & 128);
 
 
 

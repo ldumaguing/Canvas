@@ -6,6 +6,13 @@ struct Image {
     id: i32,
     name: Option<String>,
     val1: i32,
+    val2: i32,
+    val3: i32,
+    val4: i32,
+    val5: i32,
+    val6: i32,
+    val7: i32,
+    val8: i32,
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
@@ -17,7 +24,8 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     let selected = conn
         .query_map(
             "SELECT id, name,
-               Aspects
+               Speed, minSpeed, Armor, HE,
+               AP, AP_range, HE_range, colors
             from images where
             pieceType = 'command' or
             pieceType = 'combat'  or
@@ -25,8 +33,8 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
             pieceType = 'marker'  or
             pieceType = 'OBA'
             order by name, id",
-            |(id, name, val1)| {
-                Image { id, name, val1 }
+            |(id, name, val1, val2, val3, val4, val5, val6, val7, val8)| {
+                Image { id, name, val1, val2, val3, val4, val5, val6, val7, val8 }
             },
     )?;
 
@@ -36,6 +44,13 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     println!("</head><body><table>");
     println!("<tr><th>Id</th>");
     println!("<th>Image</th>");
+    println!("<th></th>");
+    println!("<th></th>");
+    println!("<th></th>");
+    println!("<th></th>");
+    println!("<th></th>");
+    println!("<th></th>");
+    println!("<th></th>");
     println!("<th></th>");
     println!("<th>Filename</th></tr>");
 
@@ -53,25 +68,6 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
             Some(x) => println!("<td>{}</td>", x.to_string()),
         }
 */
-
-        if chit.val1 > 0 {   // Aspects
-			// println!("<td class=\"White_font\"><b>{}</b></td>", chit.val1);
-			println!("<td class=\"White_font\"><b>");
-			if chit.val1 & 1 == 1 { println!("Huge; "); };
-			if chit.val1 & 4 == 4 { println!("Recon; "); };
-			if chit.val1 & 2 == 2 { println!("NOE; "); };
-			if chit.val1 & 8 == 8 { println!("Carrier; "); };
-			println!("</b></td>");
-        }
-        else { println!("<td></td>"); }
-
-
-
-
-
-
-/*
-
 
         if chit.val5 > 0 {   // AP
 			if chit.val8 & 48 == 48 { println!("<td class=\"Purple_font\" align=\"right\"><b>{}</b></td>", chit.val5); }
@@ -131,7 +127,7 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
 
 
-*/
+
 
 
 

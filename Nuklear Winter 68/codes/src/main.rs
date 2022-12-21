@@ -16,7 +16,7 @@ struct Image {
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
-    let url = "mysql://ayeka@localhost:3306/Nuklear_Winter_68";
+    let url = "mysql://ayeka:sasamichan@fish1:3306/Nuklear_Winter_68";
     let pool = Pool::new(url)?;
 
     let mut conn = pool.get_conn()?;
@@ -24,8 +24,8 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     let selected = conn
         .query_map(
             "SELECT id, name,
-               AP_Fire_Red, AP_Fire_Blu, AP_Rang_Red, AP_Rang_Wht, AP_Rang_Blu,
-               HE_Fire, HE_Rang_Wht, HE_Rang_Yel
+               Speed, minSpeed, Armor, HE,
+               AP, AP_range, HE_range, colors
             from images where
             pieceType = 'command' or
             pieceType = 'combat'  or
@@ -49,12 +49,12 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     println!("<th></th>");
     println!("<th></th>");
     println!("<th></th>");
-    println!("<th></th>"); // divider
     println!("<th></th>");
     println!("<th></th>");
     println!("<th></th>");
-    println!("<th></th>"); // divider
     println!("<th>Filename</th></tr>");
+
+
 
     for chit in selected {
         println!("<tr>");
@@ -68,44 +68,70 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
             Some(x) => println!("<td>{}</td>", x.to_string()),
         }
 */
-        if chit.val1 > 0 { println!("<td class=\"Red_font\"><b>{}</b></td>", chit.val1); }
+
+        if chit.val5 > 0 {   // AP
+			if chit.val8 & 48 == 48 { println!("<td class=\"Purple_font\" align=\"right\"><b>{}</b></td>", chit.val5); }
+			else {
+                if chit.val8 & 32 == 32 { println!("<td class=\"Blue_font\" align=\"right\"><b>{}</b></td>", chit.val5); }
+                else { println!("<td class=\"Red_font\" align=\"right\"><b>{}</b></td>", chit.val5); }
+			}
+			
+        }
         else { println!("<td></td>"); }
 
-        if chit.val2 > 0 { println!("<td class=\"Blue_font\"><b>{}</b></td>", chit.val2); }
+
+        if chit.val6 > 0 {   // AP_range
+			if chit.val8 & 64 == 64 { println!("<td class=\"Red_font\"><sup><b>{}</b></sup></td>", chit.val6); }
+			if chit.val8 & 128 == 128 { println!("<td class=\"White_font\"><sup><b>{}</b></sup></td>", chit.val6); }
+			if chit.val8 & 256 == 256 { println!("<td class=\"Blue_font\"><sup><b>{}</b></sup></td>", chit.val6); }
+        }
         else { println!("<td></td>"); }
 
-        if chit.val3 > 0 { println!("<td class=\"Red_font\"><b>{}</b></td>", chit.val3); }
+
+        if chit.val4 > 0 {   // HE
+			println!("<td class=\"Yellow_font\" align=\"right\"><b>{}</b></td>", chit.val4);
+        }
         else { println!("<td></td>"); }
 
-        if chit.val4 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val4); }
+
+        if chit.val7 > 0 {   // HE_range
+            if chit.val8 & 8 == 8 { println!("<td class=\"Yellow_font\"><sup><b>{}</b></sup></td>", chit.val7); }
+            else { println!("<td class=\"White_font\"><sup><b>{}</b></sup></td>", chit.val7); }
+        }
         else { println!("<td></td>"); }
 
-        if chit.val5 > 0 { println!("<td class=\"Blue_font\"><b>{}</b></td>", chit.val5); }
+
+        if chit.val3 > 0 {   // Armor
+ 	        if chit.val8 & 1 == 1 { println!("<td class=\"Red_font\" align=\"right\"><b>{}</b></td>", chit.val3); }
+			if chit.val8 & 2 == 2 { println!("<td class=\"Blue_font\" align=\"right\"><b>{}</b></td>", chit.val3); }
+			if chit.val8 & 4 == 4 { println!("<td class=\"Yellow_font\" align=\"right\"><b>{}</b></td>", chit.val3); }
+        }
         else { println!("<td></td>"); }
 
-        println!("<td>|</td>");
 
-        if chit.val6 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val6); }
+        println!("<td></td>");
+
+
+        if chit.val1 > 0 {   // Speed
+            println!("<td class=\"White_font\" align=\"right\"><b>{}</b></td>", chit.val1);
+        }
         else { println!("<td></td>"); }
 
-        if chit.val7 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val7); }
+
+
+
+        if chit.val2 > 0 {   // minSpeed
+            println!("<td class=\"White_font\" align=\"right\"><sup><b>{}</b></sup></td>", chit.val2);
+        }
         else { println!("<td></td>"); }
 
-        if chit.val8 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val8); }
-        else { println!("<td></td>"); }
 
-        println!("<td>|</td>");
 
-        
-        // if chit.val3 > 0 { println!("<td class=\"Yellow_font\"><b>{}</b></td>", chit.val3); }
-        // else { println!("<td>---</td>"); }
 
-        // if chit.val4 > 0 { println!("<td class=\"White_font\"><b>{}</b></td>", chit.val4); }
-        // else { println!("<td>---</td>"); }
 
-        // println!("<td class=\"Blue_font\">{}</td>", chit.val2);
-        // println!("<td>{}</td>", chit.val3);
-        // println!("<td>{}</td>", chit.val4);
+
+
+
 
         println!("<td>{}</td>", chit.name.as_ref().unwrap().to_string() );
 

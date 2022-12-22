@@ -9,7 +9,7 @@ struct Image {
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
-    let url = "mysql://ayeka:sasamichan@fish1:3306/Nuklear_Winter_68";
+    let url = "mysql://ayeka@localhost:3306/Nuklear_Winter_68";
     let pool = Pool::new(url)?;
 
     let mut conn = pool.get_conn()?;

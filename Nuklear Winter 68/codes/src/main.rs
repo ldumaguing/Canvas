@@ -3,8 +3,7 @@ use mysql::prelude::*;
 
 #[derive(Debug, PartialEq, Eq)]
 struct Image {
-    id: i32,
-    name: Option<String>,
+    location: Option<String>,
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
@@ -15,22 +14,43 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
     let selected = conn
         .query_map(
-            "SELECT id, name from images order by id",
-            |(id, name)| {
-                Image { id, name }
+            "SELECT location from instances order by stack, location desc",
+            |location| {
+                Image { location }
             },
     )?;
 
-    println!("<!DOCTYPE html><html><head><script src=\"canvas0.js\"></script></head><body>");
+    let mut x_loc = 0;
+    let mut y_loc = 0;
+    
+    println!("1: {}, {}", x_loc, y_loc);
 
     for chit in selected {
-		println!("<img id=\"{}\" src=\"/opt/Vassal/Nuklear Winter 68/{}\" hidden>",
-		    chit.id, chit.name.as_ref().unwrap().to_string() );
+		match chit.location.as_ref() {
+			None => println!("-"),
+			// Some(x) => println!("{}", x.to_string()),
+			Some(x) => {
+				x_loc = get_x(x);
+				y_loc = get_y(x);
+				},
+		}
 	}
     
-    println!("<canvas id=\"Canvas0\" width=\"6372\" height=\"4139\">
-                  Your browser does not support the HTML canvas tag.</canvas>
-              </body></html>");
+    println!("2: {}, {}", x_loc, y_loc);
     
     Ok (())
 }
+
+fn get_x(s: &str) -> i32 {
+	println!("... {}", s);
+	5
+}
+
+fn get_y(s: &str) -> i32 {
+	println!("... {}", s);
+	6
+}
+
+
+
+

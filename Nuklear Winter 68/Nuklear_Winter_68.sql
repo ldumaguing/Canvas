@@ -100,6 +100,7 @@ CREATE TABLE `instances` (
   `isFront` int(11) DEFAULT 1,
   `location` varchar(80) DEFAULT NULL,
   `HP` int(11) DEFAULT 0,
+  `stack` int(11) DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -110,7 +111,7 @@ CREATE TABLE `instances` (
 
 LOCK TABLES `instances` WRITE;
 /*!40000 ALTER TABLE `instances` DISABLE KEYS */;
-INSERT INTO `instances` VALUES (1,3,1,'1010',3),(2,14,1,'1011',3);
+INSERT INTO `instances` VALUES (1,3,1,'A1',3,0),(2,14,1,'CC20',3,0),(3,17,1,'DD19',3,0);
 /*!40000 ALTER TABLE `instances` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -123,4 +124,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-22 12:57:06
+-- Dump completed on 2022-12-22 15:58:02

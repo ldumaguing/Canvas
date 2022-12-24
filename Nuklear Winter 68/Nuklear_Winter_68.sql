@@ -1,8 +1,8 @@
--- MariaDB dump 10.19  Distrib 10.6.10-MariaDB, for FreeBSD13.1 (amd64)
+-- MariaDB dump 10.19  Distrib 10.5.18-MariaDB, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: Nuklear_Winter_68
 -- ------------------------------------------------------
--- Server version	10.6.10-MariaDB
+-- Server version	10.5.18-MariaDB-0+deb11u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -32,7 +32,7 @@ CREATE TABLE `chits` (
   `pieceType` varchar(20) DEFAULT NULL,
   `HP` int(11) DEFAULT 3,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -74,7 +74,7 @@ CREATE TABLE `images` (
   `val_3` int(11) DEFAULT -1,
   `val_4` int(11) DEFAULT -1,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,13 +96,14 @@ DROP TABLE IF EXISTS `instances`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `instances` (
   `id` int(11) NOT NULL,
-  `chitID` int(11) DEFAULT 0,
+  `origId` int(11) DEFAULT NULL,
+  `currId` int(11) DEFAULT NULL,
   `isFront` int(11) DEFAULT 1,
   `location` varchar(80) DEFAULT NULL,
-  `HP` int(11) DEFAULT 0,
   `stack` int(11) DEFAULT 0,
+  `HP` int(11) DEFAULT 3,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -111,9 +112,43 @@ CREATE TABLE `instances` (
 
 LOCK TABLES `instances` WRITE;
 /*!40000 ALTER TABLE `instances` DISABLE KEYS */;
-INSERT INTO `instances` VALUES (1,3,1,'A1',3,0),(2,14,1,'CC20',3,0),(3,17,1,'DD19',3,0);
+INSERT INTO `instances` VALUES (1,3,3,1,'A1',0,3),(2,14,14,1,'CC20',0,3),(3,17,17,1,'DD19',0,3);
 /*!40000 ALTER TABLE `instances` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Temporary table structure for view `v_instances`
+--
+
+DROP TABLE IF EXISTS `v_instances`;
+/*!50001 DROP VIEW IF EXISTS `v_instances`*/;
+SET @saved_cs_client     = @@character_set_client;
+SET character_set_client = utf8;
+/*!50001 CREATE VIEW `v_instances` AS SELECT
+ 1 AS `id`,
+  1 AS `currId`,
+  1 AS `isFront`,
+  1 AS `location`,
+  1 AS `stack` */;
+SET character_set_client = @saved_cs_client;
+
+--
+-- Final view structure for view `v_instances`
+--
+
+/*!50001 DROP VIEW IF EXISTS `v_instances`*/;
+/*!50001 SET @saved_cs_client          = @@character_set_client */;
+/*!50001 SET @saved_cs_results         = @@character_set_results */;
+/*!50001 SET @saved_col_connection     = @@collation_connection */;
+/*!50001 SET character_set_client      = utf8 */;
+/*!50001 SET character_set_results     = utf8 */;
+/*!50001 SET collation_connection      = utf8_general_ci */;
+/*!50001 CREATE ALGORITHM=UNDEFINED */
+/*!50013 DEFINER=`ayeka`@`localhost` SQL SECURITY DEFINER */
+/*!50001 VIEW `v_instances` AS select `instances`.`id` AS `id`,`instances`.`currId` AS `currId`,`instances`.`isFront` AS `isFront`,`instances`.`location` AS `location`,`instances`.`stack` AS `stack` from `instances` */;
+/*!50001 SET character_set_client      = @saved_cs_client */;
+/*!50001 SET character_set_results     = @saved_cs_results */;
+/*!50001 SET collation_connection      = @saved_col_connection */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -124,4 +159,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-24 16:11:32
+-- Dump completed on 2022-12-24 17:16:24

@@ -233,6 +233,7 @@ name = "codes"
 version = "0.1.0"
 dependencies = [
  "mysql",
+ "regex",
 ]
 
 [[package]]

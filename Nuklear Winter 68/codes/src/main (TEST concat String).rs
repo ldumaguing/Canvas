@@ -15,8 +15,7 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 
     let mut conn = pool.get_conn()?;
 
-    // let stmt = "SELECT id, name, front, back from chits where pieceType = 'combat'";
-    let mut stmt: String = String::from("SELECT id, name, front, back from chits where pieceType = 'combat'");
+    let stmt = "SELECT id, name, front, back from chits where pieceType = 'combat'";
     stmt.push_str(" order by name");
     stmt.push_str(" limit 13");
     println!(">>>>>>>>>> {}", stmt);

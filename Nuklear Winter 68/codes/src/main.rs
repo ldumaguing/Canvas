@@ -3,11 +3,8 @@ use mysql::*;
 use mysql::prelude::*;
 
 #[derive(Debug, PartialEq, Eq)]
-struct Chit {
-    id: i32,
+struct ValidUnit {
     name: Option<String>,
-    front: Option<String>,
-    back: Option<String>,
 }
 
 fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
@@ -22,11 +19,19 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
     let pool = Pool::new(url)?;
     let conn = pool.get_conn()?;
 
+/*
     if is_unit(&args[1], conn) {
         println!("yup");
     }
+*/
 
+//let fish = is_unit(&args[1], conn);
+//println!("{}", fish);
 
+match is_unit(&args[1], conn) {
+    Ok(()) => println!("ok"),
+    Err(..) => println!("false"),
+}
 
 
 
@@ -35,25 +40,22 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 }
 
 // *************************************************************************************************
-fn is_unit (s: &str, conn: PooledConn) -> bool {
-    println!("{}", s);
-    let mut stmt: String = String::from("SELECT * FROM chits WHERE ");
 
-/*
+fn is_unit (s: &str, mut conn: PooledConn) -> std::result::Result<(), Box<dyn std::error::Error>> {
+    let mut stmt: String = String::from("SELECT name FROM chits WHERE pieceType = 'combat' AND id = ");
+    stmt.push_str(s);
+    println!(">>>>>>> {}", stmt);
+
     let selected = conn
         .query_map(
             stmt,
-            |(location, val1, val2, val3, val4)| {
-                Image { location, val1, val2, val3, val4 }
+            |name| {
+                ValidUnit { name }
             },
     )?;
-*/
     
-    
-    
-    
-    
-    true
+    if selected.len() > 0 { Ok(()) }
+    else { Err("")? }
 }
 
 

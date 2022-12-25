@@ -28,10 +28,12 @@ insert into instances (chitID, location, HP) values
 ***********************************************************************************
 create table instances (
 id        int primary key auto_increment,
-chitID    int default 0,
+origId    int default 0,
+currId    int default 0,
 isFront   int default 1,
 location  varchar(80),
-HP        int default 0
+stack     int default 0,
+HP        int default 3
 );
 
 

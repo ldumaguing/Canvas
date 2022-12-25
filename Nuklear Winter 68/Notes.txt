@@ -18,16 +18,16 @@ shift 141
 
 ***********************************************************************************
 
-insert into instances (id, chitID, location, HP) values
-(1, 3, 'A1', 3),
-(2, 14, 'CC20', 3),
-(3, 17, 'DD19', 3);
+insert into instances (chitID, location, HP) values
+(3, 'A1', 3),
+(14, 'CC20', 3),
+(17, 'DD19', 3);
 
 
 
 ***********************************************************************************
 create table instances (
-id        int primary key,
+id        int primary key auto_increment,
 chitID    int default 0,
 isFront   int default 1,
 location  varchar(80),

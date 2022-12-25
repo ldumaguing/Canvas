@@ -1,3 +1,9 @@
+new_unit chitId location
+
+
+
+
+
 ********************************************* Field: colors
   1 Armor Red
   2 Armor Blue

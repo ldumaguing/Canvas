@@ -37,17 +37,15 @@ fn main() -> std::result::Result<(), Box<dyn std::error::Error>> {
 // *************************************************************************************************
 fn is_unit (s: &str, conn: PooledConn) -> bool {
     println!("{}", s);
-    let mut stmt: String = String::from("SELECT * FROM chits WHERE ");
-
-/*
+    
     let selected = conn
         .query_map(
-            stmt,
+            "SELECT ",
             |(location, val1, val2, val3, val4)| {
                 Image { location, val1, val2, val3, val4 }
             },
     )?;
-*/
+    
     
     
     
